@@ -13,6 +13,36 @@
   }
 }
 
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/futur.ttf') format('truetype'), 
+  url('./fonts/futura\ medium\ bt.ttf') format('truetype'),
+  url('./fonts/Futura\ Bold\ font.ttf') format('truetype'),
+  url('./fonts/Futura\ Bold\ Italic\ font.ttf') format('truetype');
+  font-weight: 200 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/Futura\ Light\ font.ttf') format('truetype');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirLTStd-Roman.otf') format('opentype'),
+  url('./fonts/AvenirLTStd-Book.otf') format('opentype');
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirLTStd-Black.otf') format('opentype');
+  font-weight: bold;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,6 +56,86 @@
 
 .App-link {
   color: #61dafb;
+}
+
+h1 {
+  font-family: 'Futura';
+  font-size: 3.25em;
+  margin: 0.5em;
+}
+
+.spacer {
+  margin-top: 12em;
+}
+
+.small-p {
+  font-family: 'Avenir';
+  font-size: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.bold-small-p {
+  font-family: 'Avenir';
+  font-size: 1em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  gap: 0em;
+}
+
+.flex-column-topright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-right-icons {
+  margin-right: 2em;
+  margin-top: 2em;
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 5em;
+}
+
+.sidenav-holder {
+  font-size: 1.5em;
+  color: gray;
+  font-family: 'Futura';
+  position: fixed;
+  top: 2em;
+  left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.sidenav {
+  font-weight: 100;
+  font-size: 0.7em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: gray;
+}
+
+.sidenav a {
+  color: inherit;
+  text-decoration: none;
+  appearance: none;
 }
 
 @keyframes App-logo-spin {
